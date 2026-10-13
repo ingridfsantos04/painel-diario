@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  meu-painel:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./dados_banco:/app/data
+    restart: always
